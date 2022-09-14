@@ -8,4 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-My personal website.
+Hello! My name is Rob, and I'm a first-year computer science PhD student at the University of Iowa. I work under the supervision of [Dr. Cesare Tinelli](https://homepage.cs.uiowa.edu/~tinelli/), and my research interests focus on [formal methods](https://en.wikipedia.org/wiki/Formal_methods), often with applications in [computer security](https://en.wikipedia.org/wiki/Computer_security). You can find my CV here (last updated in May 2022).
+
+When I'm not working, I enjoy playing guitar, lifting weights, and playing video games. 

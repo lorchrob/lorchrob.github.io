@@ -10,6 +10,7 @@ author_profile: true
   * [CS:4420] Artificial Intelligence (Spring 2022)
   * [CS:5810] Formal Methods of Software Engineering (Fall 2021)
   * [CS:2640] Computer Organization (Fall 2021)
+
 ### Grinnell College Class Mentor
   * [CSC-207] Object-oriented problem solving, data structures, and algorithms (Spring 2021)
 

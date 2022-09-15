@@ -5,7 +5,8 @@ permalink: /teaching/
 author_profile: true
 ---
 
-## Teaching Experience
+Below is a list of courses I have taught in various capacities.
+
 ### UIowa Teaching Assistant
   * [CS:4420] Artificial Intelligence (Spring 2022)
   * [CS:5810] Formal Methods of Software Engineering (Fall 2021)

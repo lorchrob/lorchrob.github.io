@@ -7,7 +7,7 @@ author_profile: true
 
 In the past, I have done research in combinatorics, graph theory, and mathematical modeling.
 
-Currently, my main research interests lie in formal methods tools and their applications, with a particular focus on security. Specifically, my research involves concepts such as model checking, satisfiability modulo theories, and protocol analysis.
+Currently, my main research interests lie in formal methods tools and their applications, with a particular focus on security.
 
 Publications:
   * D. Larraz, **R. Lorch**, M. Yahyazadeh, F. Arif, O. Chowdhury, and C. Tinelli, "CRV: An automated resiliency reasoner for system design models," FMCAD 2023.

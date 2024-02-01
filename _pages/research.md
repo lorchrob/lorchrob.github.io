@@ -10,6 +10,7 @@ In the past, I have done research in combinatorics, graph theory, and mathematic
 Currently, my main research interests lie in formal methods tools and their applications, with a particular focus on security.
 
 Publications:
+  * **R. Lorch**, B. Meng, K. Siu, A. Moitra, M. Durling, S. Paul, S. Varanasi, C. McMillan, "Formal Methods in Requirements Engineering: Survey and Future Directions," FormaliSE (Colocated with ICSE) '24 (to appear).
   * D. Larraz, **R. Lorch**, M. Yahyazadeh, F. Arif, O. Chowdhury, and C. Tinelli, "CRV: Automated Cyber-Resiliency Reasoning for System Design Models," FMCAD 2023.
   <!-- * J. Hammer, **R. Lorch***, and C. Owens, “Strong proper connection colorings of graph joins,” Under review. [pdf](https://drive.google.com/file/d/1jv2ttoNW56HVWjm15yLjxXDkdmR81V3X/view?usp=sharing) -->
   * B. Carrigan, D. Diaz, J. Hammer, J. Lorch, and **R. Lorch**, “Constructing (3, b)-sudoku pair Latin squares,” Australasian Journal of Combinatorics 2022. [pdf](https://ajc.maths.uq.edu.au/pdf/82/ajc_v82_p031.pdf)

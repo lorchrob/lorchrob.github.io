@@ -14,3 +14,5 @@ often with applications in [computer security](https://en.wikipedia.org/wiki/Com
 You can find my CV [here](https://lorchrob.github.io/publications/cv.pdf) (last updated in June 2024).
 
 When I'm not working, I enjoy playing guitar, reading, running, and weightlifting.
+
+Contact: robert-lorch@uiowa.edu

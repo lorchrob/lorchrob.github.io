@@ -15,4 +15,4 @@ You can find my CV [here](https://lorchrob.github.io/publications/cv.pdf) (last 
 
 When I'm not working, I enjoy playing guitar, reading, running, and weightlifting.
 
-Contact: robert-lorch@uiowa.edu
+**Contact:** robert-lorch@uiowa.edu

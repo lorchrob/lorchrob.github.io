@@ -5,9 +5,7 @@ permalink: /research/
 author_profile: true
 ---
 
-In the past, I have done research in combinatorics, graph theory, and mathematical modeling.
-
-Currently, my main research interests lie in formal methods tools and their applications, with a particular focus on security.
+My research interests lie in formal methods tools and their applications, with a particular focus on security.
 
 Publications:
   * **R. Lorch**, D. Larraz, C. Tinelli, and O. Chowdhury, "A Comprehensive, Automated Security Analysis of the Uptane Automotive Over-the-Air Update Framework," RAID '24.   [pdf](https://dl.acm.org/doi/pdf/10.1145/3678890.3678927)

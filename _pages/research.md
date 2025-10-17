@@ -8,7 +8,6 @@ author_profile: true
 My research interests lie in formal methods tools and their applications, with a particular focus on security.
 
 Publications:
-  * **R. Lorch**, D. Dar, C. Tinelli, and O. Chowdhury, "Parse this! Summoning Context-Sensitive Inputs with Goblin," ICSE '26.
   * D. Dar,  **R. Lorch**, A. Sadeghi, V. Sorcigli, H. Gollier, C. Tinelli, M. Vanhoef, and O. Chowdhury, "SAECRED: A State-Aware, Over-the-Air Protocol Testing Approach for Discovering Parsing Bugs in SAE Handshake Implementations of COTS Wi-Fi Access Points," S&P '25.
   * B. Meng, S. Varanasi, **R. Lorch**, A. Moitra, K. Siu, S. Paul, M. Durling, N. Beniwal and N. Visnevski, "TRACE: Toolkit for Requirements Analysis Capture and Elicitation," NFM '25.
   * **R. Lorch**, D. Larraz, C. Tinelli, and O. Chowdhury, "A Comprehensive, Automated Security Analysis of the Uptane Automotive Over-the-Air Update Framework," RAID '24.   [pdf](https://dl.acm.org/doi/pdf/10.1145/3678890.3678927)

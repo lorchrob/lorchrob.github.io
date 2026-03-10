@@ -1,0 +1,26 @@
+body {
+  font-family: monospace;
+  font-size: 18px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.4;
+  background: white;
+  color: black;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.photo {
+  width: 140px;
+  float: right;
+  margin-left: 20px;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}

@@ -34,10 +34,26 @@ About
 
 I'm a fourth-year computer science PhD candidate at the University of Iowa, where I am a member of the <a href="https://clc.cs.uiowa.edu/site/" target="_blank">Computational Logic Center</a>. I work under the supervision of <a href="https://homepage.cs.uiowa.edu/~tinelli/" target="_blank">Dr. Cesare Tinelli</a> and <a href="https://www3.cs.stonybrook.edu/~omar/" target="_blank">Dr. Omar Chowdhury</a> (@ Stony Brook University).
 
+Broadly speaking, I am interested in automated techniques for detecting security 
+vulnerabilities in computational systems, or proving their absence. 
+In my work, I employ and develop tools and techniques from 
+the field of automated reasoning
+(including SMT solvers, model checkers, deductive verification engines, and so on).
+
+
+
 Publications 
 ------------
 
 <b>ICSE '26.</b> <b>R. Lorch</b>, D. Dar, C. Tinelli, and O. Chowdhury, "Parse this! Summoning Context-Sensitive Inputs with Goblin" [<a href="./papers/goblin.pdf" target="_blank">pdf</a>]
+In this paper, I develop a new approach for context-sensitive input generation 
+(i.e., given a context-sensitive grammar G, find x such that x \in G) 
+utilizing SMT solvers. 
+Such an input generation tool can be used to fuzz software with complex inputs 
+(e.g. pdf parsers), as one can encode the input specification as a context-sensitive grammar. 
+We applied this approach in [<a href="./papers/saecred.pdf" target="_blank">S&P '25</a>] 
+(see below) to discover security vulnerabilities in a widely-used 
+implementation of the Wi-Fi SAE handshake protocol.
 
 <b>Systems Engineering '26.</b> B. Meng, <b>R. Lorch</b>, K. Siu, M. Durling, S. Varanasi, S. Paul, and A. Moitra, "Transforming Natural Language Requirements to Formalism Using LLMs" [<a href="./papers/nl2f.pdf" target="_blank">pdf</a>]
 
@@ -46,6 +62,9 @@ Publications
 <b>NFM '25.</b> B. Meng, S. Varanasi, <b>R. Lorch</b>, A. Moitra, K. Siu, S. Paul, M. Durling, N. Beniwal and N. Visnevski, "TRACE: Toolkit for Requirements Analysis Capture and Elicitation" [<a href="./papers/trace.pdf" target="_blank">pdf</a>]
 
 <b>RAID '24.</b> <b>R. Lorch</b>, D. Larraz, C. Tinelli, and O. Chowdhury, "A Comprehensive, Automated Security Analysis of the Uptane Automotive Over-the-Air Update Framework" [<a href="./papers/uptane.pdf" target="_blank">pdf</a>]
+In this paper, I explore novel techniques for interoperation between 
+cryptographic protocol verifiers (e.g., Tamarin) and general-purpose model checkers 
+(e.g., Kind 2) aimed towards the discovery of design-level vulnerabilities in security protocols. 
 
 <b>FormaliSE '24.</b> <b>R. Lorch</b>, B. Meng, K. Siu, A. Moitra, M. Durling, S. Paul, S. Varanasi, and C. McMillan, "Formal Methods in Requirements Engineering: Survey and Future Directions" [<a href="./papers/formalise.pdf" target="_blank">pdf</a>]
 

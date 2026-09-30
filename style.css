@@ -1,5 +1,6 @@
 :root {
-  --accent: #0f5c52;
+  --accent: #0f4c81;
+  --accent-soft: rgba(15, 76, 129, 0.35);
   --fg: #111;
   --muted: #555;
   --rule: #e2e2e2;
@@ -30,7 +31,7 @@ b, strong {
 a {
   color: var(--accent);
   text-decoration: none;
-  border-bottom: 1px solid rgba(15, 92, 82, 0.35);
+  border-bottom: 1px solid var(--accent-soft);
 }
 
 a:hover {

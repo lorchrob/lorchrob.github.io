@@ -1,82 +1,242 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rob Lorch</title>
+  <meta name="author" content="Rob Lorch">
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<img src="photo.jpeg" alt="Rob Lorch" class="photo">
+  <header>
+    <div class="logo"><a href="./">Rob Lorch</a></div>
+    <div class="tagline">PhD Candidate, Computer Science @ University of Iowa</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<pre>
+  <main role="main">
 
-Rob Lorch
----------
+    <h1 id="about">About</h1>
 
-PhD Candidate, Computer Science @ UIowa
+    <div class="intro">
+      <img src="photo.jpeg" alt="Rob Lorch" class="photo">
 
-Research Interests:
-  - Automated reasoning 
-  - Computer security 
+      <p>
+        I'm a fifth-year computer science PhD candidate at the University of Iowa, where I am a member of the
+        <a href="https://clc.cs.uiowa.edu/site/" target="_blank">Computational Logic Center</a>. I work under the
+        supervision of <a href="https://homepage.cs.uiowa.edu/~tinelli/" target="_blank">Dr. Cesare Tinelli</a> and
+        <a href="https://www3.cs.stonybrook.edu/~omar/" target="_blank">Dr. Omar Chowdhury</a> (@ Stony Brook
+        University).
+      </p>
 
-Email:
-  robert-lorch@uiowa.edu
+      <p>
+        Broadly speaking, I am interested in automated techniques for detecting security vulnerabilities in
+        computational systems, or proving their absence. In my work, I employ and develop tools and techniques from the
+        field of automated reasoning (including SMT solving, model checking, deductive verification, logic programming,
+        and so on).
+      </p>
 
-Links:
-  <a href="https://scholar.google.com/citations?hl=en&user=k9886iUAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar</a>
-  <a href="./cv.pdf" target="_blank">CV</a>
-  <a href="https://github.com/lorchrob" target="_blank">GitHub</a>
+      <h2>Research Interests</h2>
+      <ul class="interests">
+        <li>Automated reasoning</li>
+        <li>Computer security</li>
+      </ul>
 
-About
------
+      <ul class="pills">
+        <li><a class="pill"
+            href="https://scholar.google.com/citations?hl=en&user=k9886iUAAAAJ&view_op=list_works&sortby=pubdate"
+            target="_blank">Google Scholar</a></li>
+        <li><a class="pill" href="./cv.pdf" target="_blank">CV</a></li>
+        <li><a class="pill" href="https://github.com/lorchrob" target="_blank">GitHub</a></li>
+        <li><a class="pill" href="mailto:robert-lorch@uiowa.edu">Email</a></li>
+      </ul>
+    </div>
 
-I'm a fifth-year computer science PhD candidate at the University of Iowa, where I am a member of the <a href="https://clc.cs.uiowa.edu/site/" target="_blank">Computational Logic Center</a>. I work under the supervision of <a href="https://homepage.cs.uiowa.edu/~tinelli/" target="_blank">Dr. Cesare Tinelli</a> and <a href="https://www3.cs.stonybrook.edu/~omar/" target="_blank">Dr. Omar Chowdhury</a> (@ Stony Brook University).
+    <h1 id="publications">Publications</h1>
 
-Broadly speaking, I am interested in automated techniques for detecting security vulnerabilities in computational systems, or proving their absence. In my work, I employ and develop tools and techniques from the field of automated reasoning (including SMT solving, model checking, deductive verification, logic programming, and so on).
+    <ul class="pubs">
+      <li>
+        <div class="venue">ICSE '26</div>
+        <div>
+          <span class="pub-title">Parse this! Summoning Context-Sensitive Inputs with Goblin</span>
+          <a class="tag" href="./papers/goblin.pdf" target="_blank">pdf</a>
+          <div><b>R. Lorch</b>, D. Dar, C. Tinelli, and O. Chowdhury</div>
+          <details>
+            <summary><span class="toggle-label">[Summary &#9662;]</span></summary>
+            <p>
+              In this paper, I develop a new approach for context-sensitive input generation (i.e., given a
+              context-sensitive grammar G, find x such that x \in G). Such an input generation tool can be used to help
+              fuzz software with complex inputs (e.g. pdf parsers), as one can encode the input specification as a
+              context-sensitive grammar and then use the tool to generate system inputs. We applied this approach in
+              <a href="./papers/saecred.pdf" target="_blank">S&amp;P '25</a> (see below) to help discover security
+              vulnerabilities in a widely-used implementation of the Wi-Fi SAE handshake protocol.
+            </p>
+          </details>
+        </div>
+      </li>
 
-Publications 
-------------
+      <li>
+        <div class="venue">Systems Engineering '26</div>
+        <div>
+          <span class="pub-title">Transforming Natural Language Requirements to Formalism Using LLMs</span>
+          <a class="tag" href="./papers/nl2f.pdf" target="_blank">pdf</a>
+          <div>B. Meng, <b>R. Lorch</b>, K. Siu, M. Durling, S. Varanasi, S. Paul, and A. Moitra</div>
+        </div>
+      </li>
 
-<b>ICSE '26.</b> <b>R. Lorch</b>, D. Dar, C. Tinelli, and O. Chowdhury, "Parse this! Summoning Context-Sensitive Inputs with Goblin" [<a href="./papers/goblin.pdf" target="_blank">pdf</a>]
-^
-In this paper, I develop a new approach for context-sensitive input generation (i.e., given a context-sensitive grammar G, find x such that x \in G). Such an input generation tool can be used to help fuzz software with complex inputs (e.g. pdf parsers), as one can encode the input specification as a context-sensitive grammar and then use the tool to generate system inputs. We applied this approach in [<a href="./papers/saecred.pdf" target="_blank">S&P '25</a>] (see below) to help discover security vulnerabilities in a widely-used implementation of the Wi-Fi SAE handshake protocol.
+      <li>
+        <div class="venue">S&amp;P '25</div>
+        <div>
+          <span class="pub-title">SAECRED: A State-Aware, Over-the-Air Protocol Testing Approach for Discovering
+            Parsing Bugs in SAE Handshake Implementations of COTS Wi-Fi Access Points</span>
+          <a class="tag" href="./papers/saecred.pdf" target="_blank">pdf</a>
+          <div>D. Dar, <b>R. Lorch</b>, A. Sadeghi, V. Sorcigli, H. Gollier, C. Tinelli, M. Vanhoef, and O. Chowdhury
+          </div>
+        </div>
+      </li>
 
-<b>Systems Engineering '26.</b> B. Meng, <b>R. Lorch</b>, K. Siu, M. Durling, S. Varanasi, S. Paul, and A. Moitra, "Transforming Natural Language Requirements to Formalism Using LLMs" [<a href="./papers/nl2f.pdf" target="_blank">pdf</a>]
+      <li>
+        <div class="venue">NFM '25</div>
+        <div>
+          <span class="pub-title">TRACE: Toolkit for Requirements Analysis Capture and Elicitation</span>
+          <a class="tag" href="./papers/trace.pdf" target="_blank">pdf</a>
+          <div>B. Meng, S. Varanasi, <b>R. Lorch</b>, A. Moitra, K. Siu, S. Paul, M. Durling, N. Beniwal, and N.
+            Visnevski</div>
+        </div>
+      </li>
 
-<b>S&P '25.</b> D. Dar, <b>R. Lorch</b>, A. Sadeghi, V. Sorcigli, H. Gollier, C. Tinelli, M. Vanhoef, and O. Chowdhury, "SAECRED: A State-Aware, Over-the-Air Protocol Testing Approach for Discovering Parsing Bugs in SAE Handshake Implementations of COTS Wi-Fi Access Points" [<a href="./papers/saecred.pdf" target="_blank">pdf</a>]
+      <li>
+        <div class="venue">RAID '24</div>
+        <div>
+          <span class="pub-title">A Comprehensive, Automated Security Analysis of the Uptane Automotive Over-the-Air
+            Update Framework</span>
+          <a class="tag" href="./papers/uptane.pdf" target="_blank">pdf</a>
+          <div><b>R. Lorch</b>, D. Larraz, C. Tinelli, and O. Chowdhury</div>
+          <details>
+            <summary><span class="toggle-label">[Summary &#9662;]</span></summary>
+            <p>
+              In this paper, I explore novel techniques for interoperation between cryptographic protocol verifiers
+              (e.g., Tamarin) and general-purpose model checkers (e.g., Kind 2) aimed towards the discovery of
+              design-level vulnerabilities in security protocols.
+            </p>
+          </details>
+        </div>
+      </li>
 
-<b>NFM '25.</b> B. Meng, S. Varanasi, <b>R. Lorch</b>, A. Moitra, K. Siu, S. Paul, M. Durling, N. Beniwal and N. Visnevski, "TRACE: Toolkit for Requirements Analysis Capture and Elicitation" [<a href="./papers/trace.pdf" target="_blank">pdf</a>]
+      <li>
+        <div class="venue">FormaliSE '24</div>
+        <div>
+          <span class="pub-title">Formal Methods in Requirements Engineering: Survey and Future Directions</span>
+          <a class="tag" href="./papers/formalise.pdf" target="_blank">pdf</a>
+          <div><b>R. Lorch</b>, B. Meng, K. Siu, A. Moitra, M. Durling, S. Paul, S. Varanasi, and C. McMillan</div>
+        </div>
+      </li>
 
-<b>RAID '24.</b> <b>R. Lorch</b>, D. Larraz, C. Tinelli, and O. Chowdhury, "A Comprehensive, Automated Security Analysis of the Uptane Automotive Over-the-Air Update Framework" [<a href="./papers/uptane.pdf" target="_blank">pdf</a>]
-^
-In this paper, I explore novel techniques for interoperation between cryptographic protocol verifiers (e.g., Tamarin) and general-purpose model checkers (e.g., Kind 2) aimed towards the discovery of design-level vulnerabilities in security protocols. 
+      <li>
+        <div class="venue">FMCAD '23</div>
+        <div>
+          <span class="pub-title">CRV: Automated Cyber-Resiliency Reasoning for System Design Models</span>
+          <a class="tag" href="./papers/crv.pdf" target="_blank">pdf</a>
+          <div>D. Larraz, <b>R. Lorch</b>, M. Yahyazadeh, F. Arif, O. Chowdhury, and C. Tinelli</div>
+        </div>
+      </li>
 
-<b>FormaliSE '24.</b> <b>R. Lorch</b>, B. Meng, K. Siu, A. Moitra, M. Durling, S. Paul, S. Varanasi, and C. McMillan, "Formal Methods in Requirements Engineering: Survey and Future Directions" [<a href="./papers/formalise.pdf" target="_blank">pdf</a>]
+      <li>
+        <div class="venue">AJC '22</div>
+        <div>
+          <span class="pub-title">Constructing (3, b)-sudoku pair Latin squares</span>
+          <a class="tag" href="./papers/ajc.pdf" target="_blank">pdf</a>
+          <div>B. Carrigan, D. Diaz, J. Hammer, J. Lorch, and <b>R. Lorch</b></div>
+          <div class="muted">Australasian Journal of Combinatorics</div>
+        </div>
+      </li>
 
-<b>FMCAD '23.</b> D. Larraz, <b>R. Lorch</b>, M. Yahyazadeh, F. Arif, O. Chowdhury, and C. Tinelli, "CRV: Automated Cyber-Resiliency Reasoning for System Design Models" [<a href="./papers/crv.pdf" target="_blank">pdf</a>]
+      <li>
+        <div class="venue">BICA '21</div>
+        <div>
+          <span class="pub-title">List colorings count rokudoku-pair squares</span>
+          <a class="tag" href="./papers/bica.pdf" target="_blank">pdf</a>
+          <div>B. Carrigan, J. Hammer, J. Lorch, <b>R. Lorch</b>, and C. Owens</div>
+          <div class="muted">Bulletin of the Institute of Combinatorics and its Applications</div>
+        </div>
+      </li>
+    </ul>
 
-<b>Australasian Journal of Combinatorics '22.</b> B. Carrigan, D. Diaz, J. Hammer, J. Lorch, and <b>R. Lorch</b>, "Constructing (3, b)-sudoku pair Latin squares" [<a href="./papers/ajc.pdf" target="_blank">pdf</a>]
+    <p class="note">
+      A full publication record can be found on
+      <a href="https://scholar.google.com/citations?hl=en&user=k9886iUAAAAJ&view_op=list_works&sortby=pubdate"
+        target="_blank">Google Scholar</a>.
+    </p>
 
-<b>Bulletin of the Institute of Combinatorics and its Applications '21.</b> B. Carrigan, J. Hammer, J. Lorch, <b>R. Lorch</b>, and C. Owens, "List colorings count rokudoku-pair squares" [<a href="./papers/bica.pdf" target="_blank">pdf</a>]
+    <h1 id="teaching">Teaching</h1>
 
-Teaching
---------
+    <p>Below is a list of courses I have taught in various capacities.</p>
 
-Below is a list of courses I have taught in various capacities.
+    <ul class="teaching">
+      <li>
+        <b>UIowa Teaching Assistant</b>
+        <ul class="courses">
+          <li>
+            <div class="course-id">CS:4420, Spring '22</div>
+            <div>Artificial Intelligence</div>
+          </li>
+          <li>
+            <div class="course-id">CS:5810, Fall '21</div>
+            <div>Formal Methods in Software Engineering</div>
+          </li>
+          <li>
+            <div class="course-id">CS:2640, Fall '21</div>
+            <div>Computer Organization</div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <b>Grinnell College Class Mentor</b>
+        <ul class="courses">
+          <li>
+            <div class="course-id">CSC-207, Spring '21</div>
+            <div>Object-oriented data structures and algorithms</div>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <b>Grinnell College Peer Tutor</b>
+        <ul class="courses">
+          <li>
+            <div class="course-id">CSC-161, Spring '21</div>
+            <div>Imperative problem solving and data structures</div>
+          </li>
+        </ul>
+      </li>
+    </ul>
 
-* UIowa Teaching Assistant
-  [CS:4420, Spring '22] Artificial Intelligence
-  [CS:5810, Fall '21] Formal Methods in Software Engineering 
-  [CS:2640, Fall '21] Computer Organization
+    <h1 id="contact">Contact</h1>
 
-* Grinnell College Class Mentor
-  [CSC-207, Spring '21] Object-oriented data structures and algorithms 
+    <p>
+      You can reach me at <a href="mailto:robert-lorch@uiowa.edu">robert-lorch@uiowa.edu</a>, or find me on
+      <a href="https://github.com/lorchrob" target="_blank">GitHub</a> and
+      <a href="https://scholar.google.com/citations?hl=en&user=k9886iUAAAAJ&view_op=list_works&sortby=pubdate"
+        target="_blank">Google Scholar</a>.
+    </p>
 
-* Grinnell College Peer Tutor
-  [CSC-161, Spring '21] Imperative problem solving and data structures
+  </main>
 
-</pre>
+  <footer>
+    Rob Lorch &middot; University of Iowa
+  </footer>
+
 </body>
+
 </html>

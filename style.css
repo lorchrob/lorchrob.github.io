@@ -1,26 +1,280 @@
+:root {
+  --accent: #0f5c52;
+  --fg: #111;
+  --muted: #555;
+  --rule: #e2e2e2;
+  --chip-bg: #f5f5f5;
+  --chip-border: #d8d8d8;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-family: monospace;
-  font-size: 18px;
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
-  line-height: 1.4;
-  background: white;
-  color: black;
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--fg);
+  background: #fff;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 20px 4rem;
 }
 
-pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-.photo {
-  width: 140px;
-  float: right;
-  margin-left: 20px;
+b, strong {
+  font-weight: 700;
 }
 
 a {
-  color: black;
-  text-decoration: underline;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(15, 92, 82, 0.35);
+}
+
+a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* ---- header ---- */
+
+header {
+  margin: 4rem 0 3rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 0.2rem solid var(--accent);
+}
+
+.logo {
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+}
+
+.logo a {
+  color: inherit;
+  border-bottom: none;
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 1.4rem;
+  margin-top: 0.4rem;
+}
+
+nav {
+  margin-top: 1.6rem;
+}
+
+nav a {
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: none;
+  margin-right: 2.4rem;
+}
+
+nav a:hover {
+  border-bottom: 1px solid var(--accent);
+}
+
+/* ---- headings ---- */
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 4rem 0 1.2rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--rule);
+  clear: right;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 2.4rem 0 0.8rem;
+}
+
+p {
+  margin: 0 0 1.2rem;
+}
+
+/* ---- photo ---- */
+
+.photo {
+  float: right;
+  width: 180px;
+  border-radius: 8px;
+  margin: 0.4rem 0 1.5em 2em;
+  shape-outside: inset(0 round 8px);
+}
+
+/* ---- intro ---- */
+
+.interests {
+  list-style: none;
+  padding-left: 1.4rem;
+  margin: 0 0 1.2rem;
+}
+
+.interests li::before {
+  content: "- ";
+  color: var(--muted);
+}
+
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.6rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pill {
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 0.25em 0.9em;
+  border: 1px solid var(--chip-border);
+  border-radius: 999px;
+  background: var(--chip-bg);
+  color: var(--accent);
+}
+
+.pill:hover {
+  background: #ececec;
+  border-color: var(--chip-border);
+}
+
+/* ---- publications ---- */
+
+.pubs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pubs > li {
+  display: grid;
+  grid-template-columns: 150px auto;
+  gap: 0 1.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.venue {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1.4rem;
+  padding-top: 0.25rem;
+}
+
+.pub-title {
+  font-weight: 700;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0.05em 0.45em;
+  border: 1px solid var(--chip-border);
+  border-radius: 0.4rem;
+  background: var(--chip-bg);
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+details {
+  margin-top: 0.4rem;
+}
+
+summary {
+  cursor: pointer;
+  list-style: none;
+  color: var(--accent);
+  font-size: 1.3rem;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary .toggle-label::after {
+  content: " (hide)";
+}
+
+details p {
+  margin: 0.6rem 0 0;
+  padding-left: 1.2rem;
+  border-left: 2px solid var(--rule);
+  color: var(--muted);
+  font-size: 1.45rem;
+}
+
+.note {
+  font-size: 1.4rem;
+  color: var(--muted);
+  margin-top: 1.6rem;
+}
+
+/* ---- teaching ---- */
+
+.teaching {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.teaching > li {
+  margin-bottom: 1.6rem;
+}
+
+.courses {
+  list-style: none;
+  padding: 0;
+  margin: 0.4rem 0 0;
+}
+
+.courses > li {
+  display: grid;
+  grid-template-columns: 210px auto;
+  gap: 0 1.2rem;
+}
+
+.course-id,
+.muted {
+  color: var(--muted);
+}
+
+/* ---- footer ---- */
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.2rem;
+  border-top: 0.2rem solid var(--accent);
+  font-size: 1.2rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ---- small screens ---- */
+
+@media (max-width: 600px) {
+  .photo {
+    float: none;
+    display: block;
+    margin: 0 0 1.5rem;
+  }
+
+  .pubs > li,
+  .courses > li {
+    grid-template-columns: 1fr;
+  }
+
+  nav a {
+    margin-right: 1.4rem;
+  }
 }
